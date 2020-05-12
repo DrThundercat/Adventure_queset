@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="adventure.css">
 		<script type="text/javascript" src="Main_Screen.js"></script>
+		<script type="text/javascript" src="player.js"></script>
 	</head>
 	<body>
 		<div class="grid-container">
@@ -13,6 +14,26 @@
 				<h3>
 					stats
 				</h3>
+				<script type="text/javascript">
+				var stats = player.get_stats;
+					document.getElementById("hp").innerHTML=player.stats["hp"];
+					document.getElementById("str").innerHTML=stats.str;
+					document.getElementById("wis").innerHTML=stats.wis;
+					document.getElementById("dex").innerHTML=stats.dex;
+					document.getElementById("con").innerHTML=stats.con;
+					document.getElementById("int").innerHTML=stats.int;
+					document.getElementById("luk").innerHTML=stats.luk;
+					document.getElementById("beu").innerHTML=stats.hp;
+				</script>
+				<p id="hp">hp:</p>
+				<p id="str">str:</p>
+				<p id="wis">wis:</p>
+				<p id="dex">dex:</p>
+				<p id="cha">cha:</p>
+				<p id="int">int:</p>
+				<p id="con">con:</p>
+				<p id="luk">luk:</p>
+				<p id="beu">beu:</p>
 			</div>
 			<div class="item3">
 				<textarea disabled id="main_screen" rows="10" cols="100">
