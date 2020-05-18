@@ -2,39 +2,28 @@ function make_stats()
 {
 	return Math.floor(Math.random() * 10) +1;
 }
+function Items(weapon, armor, wepon_dmg, armor_pnt, potion){
+	this.weapon = weapon;
+	this.armor = armor;
+	this.wepon_dmg = wepon_dmg;
+	this.potion = potion;
+	this.armor_pnt = armor_pnt; 
+}
 
-var player = {
-	items:{
-		weapon:
-		armor:
-		wepon_dmg:0
-		potion:
-		armor_pnt:0
-	}, 
-	stats:{
-		hp:0
-		str:0
-		wis:0
-		int:0
-		cha:0
-		dex:0
-		luk:0
-		con:0
-		beu:0
-	},
-	personality:Jester
-};
+function Player(hp, str, wis, int, dex, con, luk, beu, personality){
+		this.hp = hp;
+		this.str = str;
+		this.wis = wis;
+		this.int = int;
+		this.personality = personality;
+		this.dex = dex;
+		this.luk = luk;
+		this.con = con;
+		this.beu = beu;
+}
 
-Object.defineProperties(player, {
-    'get_stats': { get: function() { return this.Stats; } },
-    'set_stats': { set: function(str, wis, dex, con, cha, luk, beu, hp, int) { this.Stats.str = Math.floor(Math.random() * 10) +1; 
-    																	  this.Stats.wis = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.con = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.dex = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.cha = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.luk = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.beu = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.int = Math.floor(Math.random() * 10) +1;
-    																	  this.Stats.hp = Math.floor(Math.random() * 10) +1;
-    																												} }
-});
+function create_player(){
+	var x = new Player(make_stats(),0,0,0,0,0,0,0, "test");
+	var y = document.getElementById("hp");
+	return y.innerHTML = "hp: "+x.hp;
+}

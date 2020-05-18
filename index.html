@@ -7,24 +7,13 @@
 		<script type="text/javascript" src="Main_Screen.js"></script>
 		<script type="text/javascript" src="player.js"></script>
 	</head>
-	<body>
+	<body  onload="create_player()">
 		<div class="grid-container">
 			<div class="item1"></div>
 			<div class="item2">
 				<h3>
 					stats
 				</h3>
-				<script type="text/javascript">
-				var stats = player.get_stats;
-					document.getElementById("hp").innerHTML=player.stats["hp"];
-					document.getElementById("str").innerHTML=stats.str;
-					document.getElementById("wis").innerHTML=stats.wis;
-					document.getElementById("dex").innerHTML=stats.dex;
-					document.getElementById("con").innerHTML=stats.con;
-					document.getElementById("int").innerHTML=stats.int;
-					document.getElementById("luk").innerHTML=stats.luk;
-					document.getElementById("beu").innerHTML=stats.hp;
-				</script>
 				<p id="hp">hp:</p>
 				<p id="str">str:</p>
 				<p id="wis">wis:</p>
@@ -56,5 +45,4 @@
 			<div class="item5"></div>
 		</div>
 	</body>
-
 </html>
