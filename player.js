@@ -1,4 +1,4 @@
-class Player {
+export default class Player {
 	  constructor(hp, str, wis, inte, cha, dex, con, luk, beu, personality){
         this.hp = hp;
         this.str = str;

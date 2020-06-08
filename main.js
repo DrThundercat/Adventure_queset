@@ -2,8 +2,6 @@ import Player from './Player.js';
 
 document.addEventListener('DOMContentLoaded',() =>{
 
-var x = new Player();
-
 // Note: localStorage can't hold objects yet, just key value pairs
 // to get around this JSON.stringify the object
 
@@ -21,12 +19,12 @@ if (typeof(Storage) !== "undefined"){
 
 	if(localStorage.player){
 		//excellent load it up
-		x = localStorage.getItem('player');
+		var x = localStorage.getItem('player');
 	}
 	else{
 
 		//create the player object
-		x = new Player(make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(), "test");
+		var x = new Player(make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(),make_stats(), "test");
 		// save the player
 		localStorage.setItem('player', JSON.stringify(x));
 	}
