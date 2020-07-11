@@ -19,7 +19,8 @@ if (typeof(Storage) !== "undefined"){
 
 	if(localStorage.player){
 		//excellent load it up
-		var x = localStorage.getItem('player');
+		var saved_data = localStorage.getItem('player');
+		var x = JSON.parse(saved_data);
 	}
 	else{
 
@@ -31,7 +32,7 @@ if (typeof(Storage) !== "undefined"){
 }
 // browers does not support local storage
 else {
-// we have to go the cookie route
+// we have to go the cookie route or database route 
 }
 
 // display the player data
