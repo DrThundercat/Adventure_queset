@@ -1,4 +1,5 @@
 import Player from './Player.js';
+//import Item from './Item.js';
 
 document.addEventListener('DOMContentLoaded',() =>{
 
@@ -58,13 +59,4 @@ if (stat == 1)
 stat = make_stats()
 }
 return stat;
-}
-
-// inital item object
-function Items(weapon, armor, wepon_dmg, armor_pnt, potion){
-this.weapon = weapon;
-this.armor = armor;
-this.wepon_dmg = wepon_dmg;
-this.potion = potion;
-this.armor_pnt = armor_pnt;
 }
