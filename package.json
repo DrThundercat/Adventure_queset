@@ -1,0 +1,22 @@
+{
+  "name": "adventure_queset",
+  "version": "1.0.0",
+  "description": "a small app ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrThundercat/Adventure_queset.git"
+  },
+  "author": "DrThundercat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrThundercat/Adventure_queset/issues"
+  },
+  "homepage": "https://github.com/DrThundercat/Adventure_queset#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

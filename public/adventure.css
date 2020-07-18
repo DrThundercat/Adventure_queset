@@ -1,0 +1,57 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; 
+		
+		resize: none;
+		padding: 0px 0px 0px 0px;
+	}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: party;}
+.item7 { grid-area: items; }
+.item8 { grid-area: continue; }
+.item9 { grid-area: market; }
+.item10 {grid-area: money;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header header'
+    'menu main main main main main right right'
+    'menu party items continue market money right right'
+    'menu party items continue market money right right'
+    'menu party items continue market money right right'
+    'menu footer footer footer footer footer right right';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#main_screen{
+	resize: none;
+	width: 100%;
+	height: 100%;
+}
+
+.button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.button_adv{
+	border-radius: 20%;
+}
